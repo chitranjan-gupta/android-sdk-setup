@@ -6,6 +6,10 @@
 * `sudo apt upgrade -y`
 3. Install the Java Development Kit using the following commands
 * `sudo apt install default-jdk -y`
+4. Download the gradle zip for linux from [Gradle.org](https://gradle.org/releases).
+5. Unzip the distribution zip file in the directory of your choosing, for e.g.:
+* `mkdir /opt/gradle`
+* `unzip -d /opt/gradle gradle-8.0-bin.zip`
 * Follow the steps given below from the 3rd step for Github Codespace Blank.
 ## Github Codespace Blank
 * gradle version 7.6 already installed 
