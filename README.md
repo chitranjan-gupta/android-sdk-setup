@@ -29,7 +29,7 @@
 6. Move the commandlinetools directory to following location `/usr/lib/android-sdk/cmdline-tools/latest/` using the following command.
 * `mv cmdline-tools /usr/lib/android-sdk/cmdline-tools/latest/`
 7. Add environment variable of android-sdk to path with name `ANDROID_HOME` by the following command or add local.properties file inside source directory of android application.
-* `export $ANDROID_HOME=/usr/lib/android-sdk/`
+* `export ANDROID_HOME=/usr/lib/android-sdk/`
 8. Go into the following directory `/usr/lib/android-sdk/cmdline-tool/latest/bin/` by using the following command.
 * `cd /usr/lib/android-sdk/cmdline-tool/latest/bin/`
 9. Accept the license to download platforms using the following command.
