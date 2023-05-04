@@ -26,14 +26,17 @@
 * `sudo wget https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip`
 5. Unzip the commandlinetools-linux.zip file by using the following command.
 * `unzip commandlinetools-linux-9477386_latest.zip`
-6. Move the commandlinetools directory to following location `/usr/lib/android-sdk/cmdline-tools/latest/` using the following command.
-* `mv cmdline-tools /usr/lib/android-sdk/cmdline-tools/latest/`
-7. Add environment variable of android-sdk to path with name `ANDROID_HOME` by the following command or add local.properties file inside source directory of android application.
+6. Make directory cmdline-tools and cmdline-tools/latest in /usr/lib/android-sdk/
+* `sudo mkdir /usr/lib/android-sdk/cmdline-tools`
+* `sudo mkdir /usr/lib/android-sdk/cmdline-tools/latest`
+7. Move the commandlinetools directory to following location `/usr/lib/android-sdk/cmdline-tools/latest/` using the following command.
+* `sudo mv cmdline-tools /usr/lib/android-sdk/cmdline-tools/latest/`
+8. Add environment variable of android-sdk to path with name `ANDROID_HOME` by the following command or add local.properties file inside source directory of android application.
 * `export ANDROID_HOME=/usr/lib/android-sdk/`
-8. Go into the following directory `/usr/lib/android-sdk/cmdline-tool/latest/bin/` by using the following command.
-* `cd /usr/lib/android-sdk/cmdline-tool/latest/bin/`
-9. Accept the license to download platforms using the following command.
+9. Go into the following directory `/usr/lib/android-sdk/cmdline-tools/latest/bin/` by using the following command.
+* `cd /usr/lib/android-sdk/cmdline-tools/latest/bin/`
+10. Accept the license to download platforms using the following command.
 * `sudo ./sdkmanager --licenses`
 and accept all the licenses by pressing y.
-10. Go into the source directory of android application and generate debug apk by following command.
+11. Go into the source directory of android application and generate debug apk by following command.
 * `sudo bash gradlew assembleDebug`
